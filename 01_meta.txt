@@ -1,12 +1,12 @@
 ! ==========================================================
-! Meta (Facebook / Instagram / Threads / WhatsApp)
+! Meta (Facebook / Instagram / Threads)
 ! Stand: 2026-06-06
-! Zweck: alle Meta-Dienste blockieren.
+! Zweck: Facebook, Instagram und Threads blockieren.
+!        WhatsApp wird bewusst ERLAUBT (siehe unten).
 ! ----------------------------------------------------------
 ! Facebook / Messenger
 ||facebook.com^
 ||facebook.net^
-||fbcdn.net^
 ||fbsbx.com^
 ||messenger.com^
 ||m.me^
@@ -15,11 +15,16 @@
 ||cdninstagram.com^
 ! Threads
 ||threads.net^
-! WhatsApp
-||whatsapp.com^
-||whatsapp.net^
-||web.whatsapp.com^
-||static.whatsapp.net^
-||mmg.whatsapp.net^
-||g.whatsapp.net^
-||wa.me^
+! ----------------------------------------------------------
+! WhatsApp - ERLAUBT
+! WhatsApp teilt sich Infrastruktur mit Facebook (fbcdn.net).
+! Daher fbcdn.net NICHT pauschal blockieren, sonst brechen
+! WhatsApp-Medien/-Vorschauen. Stattdessen gezielt erlauben.
+@@||whatsapp.com^
+@@||whatsapp.net^
+@@||wa.me^
+@@||g.whatsapp.net^
+@@||mmg.whatsapp.net^
+@@||static.whatsapp.net^
+@@||media.whatsapp.net^
+@@||cdn.whatsapp.net^
