@@ -1,0 +1,16 @@
+! ==========================================================
+! Google - Sonstige
+! Stand: 2026-06-06
+! Zweck: App-Measurement und Client-Tracing blockieren,
+!        notwendige Android-/Push-Dienste erlauben.
+! ----------------------------------------------------------
+! Blockieren
+||app-measurement.com^
+||region1.app-measurement.com^
+||clienttracing-pa.googleapis.com^
+! Erlauben
+@@||android.googleapis.com^
+@@||mtalk.google.com^
+! Optionale Ausnahmen (auskommentiert)
+!rule@@||googleapis.com^
+!rule@@||gstatic.com^

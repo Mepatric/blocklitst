@@ -1,0 +1,14 @@
+! ==========================================================
+! Google - Firebase / Crashlytics
+! Stand: 2026-06-06
+! Zweck: Firebase-Logging und Crash-Reporting blockieren,
+!        notwendige Push-/Install-Dienste erlauben.
+! ----------------------------------------------------------
+! Blockieren
+||firebaselogging.googleapis.com^
+||firebaselogging-pa.googleapis.com^
+||crashlyticsreports-pa.googleapis.com^
+||firebase-settings.crashlytics.com^
+! Erlauben (Push / App-Funktion)
+@@||fcm.googleapis.com^
+@@||firebaseinstallations.googleapis.com^

@@ -1,0 +1,8 @@
+! ==========================================================
+! Microsoft
+! Stand: 2026-06-06
+! Zweck: Microsoft-Telemetrie und App Center blockieren.
+! ----------------------------------------------------------
+||mobile.events.data.microsoft.com^
+||mobile.pipe.aria.microsoft.com^
+||in.appcenter.ms^

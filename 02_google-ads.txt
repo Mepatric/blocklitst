@@ -1,0 +1,11 @@
+! ==========================================================
+! Google - Ads / DoubleClick
+! Stand: 2026-06-06
+! Zweck: Google-Werbe- und Tag-Dienste blockieren.
+! ----------------------------------------------------------
+||googleads.g.doubleclick.net^
+||stats.g.doubleclick.net^
+||securepubads.g.doubleclick.net^
+||pubads.g.doubleclick.net^
+||www.googleadservices.com^
+||www.googletagmanager.com^

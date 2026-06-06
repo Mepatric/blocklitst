@@ -1,0 +1,25 @@
+! ==========================================================
+! Meta (Facebook / Instagram / Threads / WhatsApp)
+! Stand: 2026-06-06
+! Zweck: alle Meta-Dienste blockieren.
+! ----------------------------------------------------------
+! Facebook / Messenger
+||facebook.com^
+||facebook.net^
+||fbcdn.net^
+||fbsbx.com^
+||messenger.com^
+||m.me^
+! Instagram
+||instagram.com^
+||cdninstagram.com^
+! Threads
+||threads.net^
+! WhatsApp
+||whatsapp.com^
+||whatsapp.net^
+||web.whatsapp.com^
+||static.whatsapp.net^
+||mmg.whatsapp.net^
+||g.whatsapp.net^
+||wa.me^

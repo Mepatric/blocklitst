@@ -1,0 +1,10 @@
+! ==========================================================
+! Google - YouTube (Ausnahmen)
+! Stand: 2026-06-06
+! Zweck: YouTube-/YouTube-Kids-Assets erlauben.
+! ----------------------------------------------------------
+@@||youtubekids.com^
+@@||yt3.ggpht.com^
+@@||i.ytimg.com^
+@@||ytimg.com^
+@@||googlevideo.com^

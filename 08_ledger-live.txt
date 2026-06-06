@@ -1,0 +1,100 @@
+! ==========================================================
+! Ledger Live - Privacy-Eindämmung für AdGuard
+! Stand: 2026-05-18
+! Zweck: Buy/Swap/Earn/Sync/Preis-/Icon-/Status-/Compliance-
+!        Dienste blockieren, Kernfunktionen optional erhalten.
+! Quelle: eigenes AdGuard-Anfragenprotokoll aus Ledger Live
+! ----------------------------------------------------------
+! 1) Buy / Kauf-Funktionen
+! Blockieren, wenn du keine Krypto-Käufe über Ledger Live nutzt.
+||buy.api.live.ledger.com^
+! 2) Swap-Funktionen
+! Blockieren, wenn du keine Swaps über Ledger Live nutzt.
+||swap.ledger.com^
+||swap-live-app.ledger.com^
+! 3) Earn / Staking / Yield-Funktionen
+! Blockieren, wenn du Earn/Staking nicht über Ledger Live nutzt.
+!||earn.api.live.ledger.com^
+! 4) Ledger Sync / Cloud Sync / Trustchain
+! Blockieren, wenn du Ledger Sync nicht nutzt.
+! Kann geräteübergreifende Synchronisierung brechen.
+||cloud-sync.api.live.ledger.com^
+||trustchain.api.live.ledger.com^
+! 5) Preis-, Markt- und Portfolio-Gegenwerte
+! Blockieren, wenn du keine Fiat-Gegenwerte/Portfolio-Werte brauchst.
+||countervalues.live.ledger.com^
+||proxycmc.api.live.ledger.com^
+||proxycgassets.api.live.ledger.com^
+! 6) Kosmetische Assets / Icons
+! Blockieren ist meist unkritisch, kann aber UI-Anzeige verschlechtern.
+!||crypto-icons.ledger.com^
+! 7) Status- und Verfügbarkeitsabfragen
+! Blockieren ist meist unkritisch.
+!||ledger.statuspage.io^
+! 8) Compliance / Risk / Policy Checks
+! Aus Privacy-Sicht kritisch. Testweise blockieren.
+! Kann Buy/Swap/Earn oder regulatorische Funktionen brechen.
+||compliance.ledger.com^
+! 9) Unklare / beobachtungswürdige Ledger-API
+! Nur aktivieren, wenn nach Test keine Kernfunktion bricht.
+! ||dada.api.ledger.com^
+! NICHT PAUSCHAL BLOCKIEREN
+! Diese Einträge sind absichtlich auskommentiert.
+! Aktivieren nur, wenn du Ledger Live NICHT als Wallet/Portfolio,
+! sondern nur sehr eingeschränkt oder gar nicht online nutzen willst.
+! A) Device Gateway
+! Vermutlich relevant für Geräte-/App-/Device-Kommunikation.
+! Blockieren kann Ledger-Erkennung, Manager oder Gerätefunktionen stören.
+! ||device-gateway.api.ledger.com^
+! B) Manager API
+! Relevant für App-Verwaltung auf dem Ledger.
+! Blockieren kann App-Installation/-Updates brechen.
+! ||manager.api.live.ledger.com^
+! C) Downloads / Updates
+! Relevant für Ledger-Live-/Firmware-/App-bezogene Downloads.
+! Blockieren kann Updates und Downloads brechen.
+! ||download.live.ledger.com^
+! D) CDN
+! Relevant für statische Inhalte, App-Daten, Assets.
+! Blockieren kann UI, App-Katalog oder Datenabruf stören.
+! ||cdn.live.ledger.com^
+! E) Live App Catalog
+! Relevant für Ledger-App-Katalog.
+! Blockieren kann App-Auswahl/Manager-Funktionen stören.
+! ||live-app-catalog.ledger.com^
+! F) Crypto Asset Service
+! Relevanz: Asset-/Token-Metadaten.
+! Privacy-relevant, aber funktional oft nötig.
+! ||crypto-assets-service.api.ledger.com^
+! G) Mapping Service
+! Relevanz: Asset-/Chain-/Account-Mapping.
+! Blockieren kann falsche oder fehlende Asset-Zuordnung verursachen.
+! ||mapping-service.api.ledger.com^
+! H) Explorer API
+! Relevanz: Explorer-/Chain-Daten.
+! Blockieren kann Kontostände, Transaktionshistorie oder Broadcasting stören.
+! ||explorers.api.live.ledger.com^
+! I) Coin-spezifische Ledger-Backends
+! Nur blockieren, wenn du diese Chains nicht in Ledger Live nutzt
+! oder Ledger Live nicht als Wallet/Portfolio verwenden willst.
+! ||solana.coin.ledger.com^
+! ||tron.coin.ledger.com^
+! ||cardano.coin.ledger.com^
+||xrp.coin.ledger.com^
+||stellar.coin.ledger.com^
+||polkadot-asset-hub-sidecar.coin.ledger.com^
+! J) Sehr strikte Variante: alle Ledger-Coin-Backends
+! Achtung: bricht sehr wahrscheinlich Account-Anzeige/Synchronisierung
+! für viele Coins.
+! ||*.coin.ledger.com^
+! OPTIONAL: bekannte Analytics-/Crash-Reporting-Dienste
+! In deinem Log nicht sichtbar, aber bei Electron-/Web-Apps häufig.
+! Aktivieren, falls sie im AdGuard-Protokoll auftauchen.
+! Segment Analytics
+||api.segment.io^
+||cdn.segment.com^
+||*.segment.io^
+! Sentry Crash Reporting
+||sentry.io^
+||*.sentry.io^
+||*.ingest.sentry.io^

@@ -1,0 +1,27 @@
+! ==========================================================
+! Sonstige Tracker / Analytics
+! Stand: 2026-06-06
+! Zweck: diverse Tracking-, Analytics- und Telemetrie-Dienste blockieren.
+! ----------------------------------------------------------
+! Datadog
+||browser-intake-datadoghq.com^
+||http-intake.logs.datadoghq.com^
+! Segment
+||api.segment.io^
+! RudderStack
+||api.rudderlabs.com^
+! Mapbox
+||events.mapbox.com^
+! AppsFlyer
+||kiccn0.launches.appsflyersdk.com^
+||*.appsflyersdk.com^
+! Urban Airship
+||remote-data.urbanairship.com^
+! DuckDuckGo
+||improving.duckduckgo.com^
+! Social-Analytics
+||analytics.tiktok.com^
+||analytics.snapchat.com^
+||analytics.pinterest.com^
+||analytics.linkedin.com^
+||analytics.twitter.com^
