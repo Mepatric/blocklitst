@@ -1,13 +1,24 @@
 ! ==========================================================
 ! Sonstige Tracker / Analytics
-! Stand: 2026-06-06
+! Stand: 2026-06-14
 ! Zweck: diverse Tracking-, Analytics- und Telemetrie-Dienste blockieren.
+! Hinweis: Segment/Sentry zentral hier (vorher auch in Ledger-Liste).
 ! ----------------------------------------------------------
 ! Datadog
 ||browser-intake-datadoghq.com^
 ||http-intake.logs.datadoghq.com^
 ! Segment
 ||api.segment.io^
+||cdn.segment.com^
+||*.segment.io^
+! Sentry Crash Reporting
+||sentry.io^
+||*.sentry.io^
+||*.ingest.sentry.io^
+! Sift Science (Fraud-/Verhaltens-Tracking - oft im Log gesehen)
+||sift.com^
+||cdn.sift.com^
+||*.siftscience.com^
 ! RudderStack
 ||api.rudderlabs.com^
 ! Mapbox

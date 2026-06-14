@@ -1,13 +1,11 @@
 ! ==========================================================
 ! SRF / SRG SSR
-! Stand: 2026-06-06
-! Zweck: SRF-/SRG-Dienste und SRF-YouTube-Kanäle blockieren.
+! Stand: 2026-06-14
+! Zweck: SRF-/SRG-Dienste blockieren.
+! Hinweis: YouTube-Kanal-Pfade (youtube.com/@srf) wurden
+!          entfernt - DNS-Blocking kann keine Pfade filtern,
+!          nur Domains. Sie waren wirkungslos.
 ! ----------------------------------------------------------
 ||srf.ch^
-||www.srf.ch^
-||play.srf.ch^
 ||srgssr.ch^
 ||srg.live.ott.irdeto.com^
-||youtube.com/@srf^
-||youtube.com/@srfdok^
-||youtube.com/@srfnews^
